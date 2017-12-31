@@ -32,7 +32,7 @@ class TwitchChatWrapper:
         self._socket_send(_socket, "JOIN #{} \r\n".format(self.channel))
         return _socket
 
-    def send_message(self):
+    def send_message(self, message):
         self.socket.send("PRIVMSG #{} :{}\r\n".format(
             self.channel, message))
 
@@ -66,7 +66,8 @@ class TwitchChatWrapper:
                     usernamesplit = parts[1].split("!")
                     username = usernamesplit[0]
                     if MODT:
-                        self.events.on_message(username, message)
+                        chat = self
+                        self.events.on_message(chat, username, message)
                        
                     for l in parts:
                         if "End of /NAMES list" in l:
