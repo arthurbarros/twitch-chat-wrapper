@@ -16,7 +16,7 @@ Follow this link https://twitchapps.com/tmi/ and save the token
 
 # usuage
 
-```
+```python
 from twitch_chat_wrapper import TwitchChatWrapper
 
 
