@@ -19,11 +19,11 @@ Follow this link https://twitchapps.com/tmi/ and save the token
 ```python
 from twitch_chat_wrapper import TwitchChatWrapper
 
-viewrs_greetings = []
+viewers_greetings = []
 
 def message_handler(chat, username, message):
     print("@{}: {}".format(username, message))
-    if username not in viewrs_greetings:
+    if username not in viewers_greetings:
         chat.send_message("@{} welcome to the stream".format(username))
         viewrs_greetings.append(username)
 
