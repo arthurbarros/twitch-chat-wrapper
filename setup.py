@@ -13,7 +13,7 @@ setup(
     long_description=LONG_DESCRIPTION,
     author='Arthur Barros',
     author_email='arthbarros@gmail.com',
-    url='https://github.com/arthurbarros/twitch_chat_wrapper',
+    url='https://github.com/arthurbarros/twitch-chat-wrapper',
     license=open('LICENSE').read(),
     platforms=["any"],
     packages=find_packages(),

@@ -1,4 +1,4 @@
 # -*- coding: utf-8 -*-
 from .wrapper import TwitchChatWrapper
 
-__version__ = '0.4' # test
+__version__ = '0.4.1' # test
