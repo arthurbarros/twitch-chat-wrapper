@@ -34,6 +34,6 @@ twitch.events.on_message += message_handler
 twitch.loop()
 ```
 
-#shout out
+# shout out
 
 To https://www.twitch.tv/hardlydifficult which is building a awesome gamedev twitch community
