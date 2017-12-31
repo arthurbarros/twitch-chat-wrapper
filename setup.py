@@ -3,7 +3,7 @@
 from setuptools import setup, find_packages
 
 DESCRIPTION = ("Simple Twitch Chat Wrapper written in Python")
-LONG_DESCRIPTION = open('README.md').read()
+LONG_DESCRIPTION = open('README.rst').read()
 VERSION = __import__('twitch_chat_wrapper').__version__
 
 setup(
